@@ -1,0 +1,24 @@
+GET http://localhost:3001
+
+###
+
+GET http://localhost:3001/health
+
+###
+
+GET http://localhost:3001/cars
+
+###
+
+GET http://localhost:3001/cars/bonjour
+
+### 
+
+POST http://localhost:3001/cars
+Content-Type: application/json
+
+{
+    "brand": "Ferrari",
+    "model": "F8 Tributo"
+}
+
