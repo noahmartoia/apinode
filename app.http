@@ -10,15 +10,57 @@ GET http://localhost:3001/cars
 
 ###
 
-GET http://localhost:3001/cars/bonjour
+GET http://localhost:3000/error
+
+
+
+###
+
+GET http://localhost:3001/cars/4
 
 ### 
 
-POST http://localhost:3001/cars
+POST http://localhost:3000/cars
 Content-Type: application/json
 
 {
-    "brand": "Ferrari",
-    "model": "F8 Tributo"
+    "brand": "F",
+    "model": "K"
 }
 
+### 
+
+PUT http://localhost:3001/cars/4
+Content-Type: application/json
+
+{
+    "brand": "Mercedes-Benz",
+    "model": "AMG GT 63 S"
+}
+
+###
+
+DELETE http://localhost:3001/cars/2
+
+
+### 
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "admin",
+    "password": "admin"
+}
+
+###
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "admin",
+    "password": "admin",
+    "name": "admin",
+    "phoneNumber": "123456789"
+}
